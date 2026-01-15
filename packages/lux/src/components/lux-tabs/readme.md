@@ -2,13 +2,11 @@
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property      | Attribute      | Description      | Type     | Default |
 | ------------- | -------------- | ---------------- | -------- | ------- |
 | `activeIndex` | `active-index` | Active tab index | `number` | `0`     |
-
 
 ## Slots
 
@@ -16,7 +14,6 @@
 | ---- | ---------------------- |
 |      | Tab elements (lux-tab) |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -37,7 +37,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Primary: Story = {
-  render: (args) => {
+  render: args => {
     const disabled = args.disabled ? 'disabled' : '';
     return `<lux-button variant="${args.variant || 'primary'}" ${disabled} type="${args.type || 'button'}">Button</lux-button>`;
   },

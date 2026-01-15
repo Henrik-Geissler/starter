@@ -14,7 +14,10 @@
   "rules": {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
-            "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^h$" }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^h$" }
+    ],
     "wc/no-constructor-attributes": "error",
     "wc/no-invalid-element-name": "error",
     "wc/no-self-class": "error"

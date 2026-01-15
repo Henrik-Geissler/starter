@@ -2,7 +2,6 @@
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property | Attribute | Description        | Type                                                                     | Default     |
@@ -11,14 +10,12 @@
 | `size`   | `size`    | Text size          | `"base" \| "lg" \| "sm" \| "xl" \| "xs" \| undefined`                    | `undefined` |
 | `weight` | `weight`  | Font weight        | `"bold" \| "medium" \| "normal" \| "semibold" \| undefined`              | `undefined` |
 
-
 ## Slots
 
 | Slot | Description  |
 | ---- | ------------ |
 |      | Text content |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

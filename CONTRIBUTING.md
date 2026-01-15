@@ -26,7 +26,6 @@ npm run storybook
 
 1. Create component directory: `packages/lux/src/components/lux-my-component/`
 2. Create component files:
-
    - `lux-my-component.tsx` - Component logic
    - `lux-my-component.scss` - Component styles
    - `lux-my-component.stories.ts` - Storybook stories

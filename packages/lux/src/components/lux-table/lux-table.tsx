@@ -106,7 +106,7 @@ export class LuxTable {
 
   private updateGrid() {
     if (!this.gridApi) return;
-    
+
     if (this.columnDefs) {
       this.gridApi.setColumnDefs(JSON.parse(this.columnDefs));
     }

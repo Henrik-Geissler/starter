@@ -2,13 +2,11 @@
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property             | Attribute | Description | Type     | Default     |
 | -------------------- | --------- | ----------- | -------- | ----------- |
 | `label` _(required)_ | `label`   | Tab label   | `string` | `undefined` |
-
 
 ## Slots
 
@@ -16,7 +14,6 @@
 | ---- | ----------------- |
 |      | Tab panel content |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
