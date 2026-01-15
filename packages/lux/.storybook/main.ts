@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/html-webpack5';
+import { StorybookConfig } from '@storybook/html-webpack5';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
@@ -14,6 +14,14 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: 'tag',
+  },
+  typescript: {
+    check: false,
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    },
   },
 };
 

@@ -1,13 +1,8 @@
-import type { Preview } from '@storybook/html';
-import { defineCustomElements } from '../loader/index.js';
-
-// Define custom elements for Storybook
-defineCustomElements();
-
 // Note: custom-elements.json will be loaded automatically if available
 // after running the build command
+// Custom elements are defined via the previewHead in main.ts
 
-const preview: Preview = {
+const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
