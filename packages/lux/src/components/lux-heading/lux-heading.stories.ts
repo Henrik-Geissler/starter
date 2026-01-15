@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -14,7 +13,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Levels: Story = {
-  render: () => html`
+  render: () => `
     <lux-heading level="1">Heading Level 1</lux-heading>
     <lux-heading level="2">Heading Level 2</lux-heading>
     <lux-heading level="3">Heading Level 3</lux-heading>

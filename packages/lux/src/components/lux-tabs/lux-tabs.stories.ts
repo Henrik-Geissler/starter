@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -21,7 +20,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Default: Story = {
-  render: () => html`
+  render: () => `
     <lux-tabs>
       <lux-tab label="Tab 1">
         <lux-text>Content for tab 1</lux-text>

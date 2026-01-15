@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -22,7 +21,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Compact: Story = {
-  render: () => html`
+  render: () => `
     <lux-scope density="compact">
       <lux-button>Compact Button</lux-button>
       <lux-card>
@@ -33,7 +32,7 @@ export const Compact: Story = {
 };
 
 export const Spacious: Story = {
-  render: () => html`
+  render: () => `
     <lux-scope density="spacious">
       <lux-button>Spacious Button</lux-button>
       <lux-card>
@@ -44,7 +43,7 @@ export const Spacious: Story = {
 };
 
 export const CustomColor: Story = {
-  render: () => html`
+  render: () => `
     <lux-scope main-color="#ff0000">
       <lux-button>Red Button</lux-button>
       <lux-text color="primary">Red text</lux-text>

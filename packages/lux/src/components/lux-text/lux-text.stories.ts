@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -14,11 +13,11 @@ export default meta;
 type Story = StoryObj;
 
 export const Default: Story = {
-  render: () => html`<lux-text>Default text</lux-text>`,
+  render: () => `<lux-text>Default text</lux-text>`,
 };
 
 export const Sizes: Story = {
-  render: () => html`
+  render: () => `
     <lux-text size="xs">Extra small text</lux-text><br />
     <lux-text size="sm">Small text</lux-text><br />
     <lux-text size="base">Base text</lux-text><br />
@@ -28,7 +27,7 @@ export const Sizes: Story = {
 };
 
 export const Weights: Story = {
-  render: () => html`
+  render: () => `
     <lux-text weight="normal">Normal weight</lux-text><br />
     <lux-text weight="medium">Medium weight</lux-text><br />
     <lux-text weight="semibold">Semibold weight</lux-text><br />
@@ -37,7 +36,7 @@ export const Weights: Story = {
 };
 
 export const Colors: Story = {
-  render: () => html`
+  render: () => `
     <lux-text color="default">Default color</lux-text><br />
     <lux-text color="muted">Muted color</lux-text><br />
     <lux-text color="primary">Primary color</lux-text><br />

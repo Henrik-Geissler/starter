@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -21,7 +20,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Default: Story = {
-  render: () => html`
+  render: () => `
     <lux-card>
       <lux-heading level="3">Card Title</lux-heading>
       <lux-text>Card content goes here</lux-text>
@@ -30,7 +29,7 @@ export const Default: Story = {
 };
 
 export const Outlined: Story = {
-  render: () => html`
+  render: () => `
     <lux-card variant="outlined">
       <lux-heading level="3">Outlined Card</lux-heading>
       <lux-text>This card has an outline border.</lux-text>
@@ -39,7 +38,7 @@ export const Outlined: Story = {
 };
 
 export const Elevated: Story = {
-  render: () => html`
+  render: () => `
     <lux-card variant="elevated">
       <lux-heading level="3">Elevated Card</lux-heading>
       <lux-text>This card has an elevated shadow.</lux-text>
@@ -48,7 +47,7 @@ export const Elevated: Story = {
 };
 
 export const WithSlots: Story = {
-  render: () => html`
+  render: () => `
     <lux-card>
       <lux-heading level="3" slot="header">Card Header</lux-heading>
       <lux-text>Card body content</lux-text>

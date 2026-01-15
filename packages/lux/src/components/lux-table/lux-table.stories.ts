@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -147,7 +146,7 @@ export default meta;
 type Story = StoryObj;
 
 export const Basic: Story = {
-  render: () => html`
+  render: () => `
     <lux-table
       column-defs='[
         {"field": "name", "headerName": "Name", "sortable": true, "filter": true},
@@ -164,7 +163,7 @@ export const Basic: Story = {
 };
 
 export const WithCustomOptions: Story = {
-  render: () => html`
+  render: () => `
     <lux-table
       column-defs='[
         {"field": "product", "headerName": "Product"},
@@ -186,7 +185,7 @@ export const WithCustomOptions: Story = {
 };
 
 export const WithScope: Story = {
-  render: () => html`
+  render: () => `
     <lux-scope density="compact" main-color="#0ea5e9">
       <lux-table
         column-defs='[
@@ -205,7 +204,7 @@ export const WithScope: Story = {
 };
 
 export const EmptyState: Story = {
-  render: () => html`
+  render: () => `
     <lux-table
       column-defs='[
         {"field": "name", "headerName": "Name"},

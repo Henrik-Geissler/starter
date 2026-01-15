@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/web-components';
-import { html } from 'lit';
 
 /**
  * @experimental
@@ -38,15 +37,10 @@ export default meta;
 type Story = StoryObj;
 
 export const Primary: Story = {
-  render: args => html`
-    <lux-button
-      variant=${args.variant || 'primary'}
-      ?disabled=${args.disabled}
-      type=${args.type || 'button'}
-    >
-      Button
-    </lux-button>
-  `,
+  render: (args) => {
+    const disabled = args.disabled ? 'disabled' : '';
+    return `<lux-button variant="${args.variant || 'primary'}" ${disabled} type="${args.type || 'button'}">Button</lux-button>`;
+  },
   args: {
     variant: 'primary',
     disabled: false,
@@ -55,23 +49,23 @@ export const Primary: Story = {
 };
 
 export const Secondary: Story = {
-  render: () => html`<lux-button variant="secondary">Secondary</lux-button>`,
+  render: () => `<lux-button variant="secondary">Secondary</lux-button>`,
 };
 
 export const Outline: Story = {
-  render: () => html`<lux-button variant="outline">Outline</lux-button>`,
+  render: () => `<lux-button variant="outline">Outline</lux-button>`,
 };
 
 export const Ghost: Story = {
-  render: () => html`<lux-button variant="ghost">Ghost</lux-button>`,
+  render: () => `<lux-button variant="ghost">Ghost</lux-button>`,
 };
 
 export const Disabled: Story = {
-  render: () => html`<lux-button disabled>Disabled</lux-button>`,
+  render: () => `<lux-button disabled>Disabled</lux-button>`,
 };
 
 export const WithScope: Story = {
-  render: () => html`
+  render: () => `
     <lux-scope density="compact" main-color="#ff0000">
       <lux-button>Compact Red Button</lux-button>
     </lux-scope>
