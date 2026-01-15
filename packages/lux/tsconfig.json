@@ -17,6 +17,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.spec.ts", ".storybook/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.spec.ts", "src/**/*.stories.ts", ".storybook/**/*.ts"],
   "exclude": ["node_modules", "dist", "**/*.e2e.ts"]
 }

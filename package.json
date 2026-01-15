@@ -2,7 +2,6 @@
   "name": "lux-monorepo",
   "version": "0.0.1",
   "private": true,
-  "description": "Lux component library monorepo",
   "workspaces": [
     "packages/*",
     "examples/*"
@@ -11,13 +10,14 @@
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,scss,css,md,html}\" --ignore-path .gitignore",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,scss,css,md,html}\" --ignore-path .gitignore",
+    "format": "prettier --write .",
+    "dev": "concurrently --names \"lux,react,angular,jquery\" --prefix-colors \"blue,green,yellow,magenta\" \"npm run dev --workspace=packages/lux\" \"npm run dev --workspace=examples/react-app\" \"npm run dev --workspace=examples/angular-app\" \"npm run dev --workspace=examples/jquery-app\"",
     "storybook": "npm run storybook --workspace=packages/lux",
     "build:storybook": "npm run build:storybook --workspace=packages/lux"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
+    "concurrently": "^9.2.1",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3"
   },

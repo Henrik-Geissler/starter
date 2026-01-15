@@ -23,17 +23,61 @@
       "import": "./dist/react/components.ts"
     },
     "./angular": {
-      "types": "./dist/angular/index.d.ts",
-      "import": "./dist/angular/index.js"
+      "types": "./dist/angular/lux.module.d.ts",
+      "import": "./dist/angular/lux.module.ts"
     },
     "./loader": {
       "import": "./loader/index.js",
       "require": "./loader/index.cjs.js"
+    },
+    "./components": {
+      "types": "./dist/types/components.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./components/lux-button.js": {
+      "types": "./dist/components/lux-button.d.ts",
+      "import": "./dist/components/lux-button.js"
+    },
+    "./components/lux-card.js": {
+      "types": "./dist/components/lux-card.d.ts",
+      "import": "./dist/components/lux-card.js"
+    },
+    "./components/lux-heading.js": {
+      "types": "./dist/components/lux-heading.d.ts",
+      "import": "./dist/components/lux-heading.js"
+    },
+    "./components/lux-icon.js": {
+      "types": "./dist/components/lux-icon.d.ts",
+      "import": "./dist/components/lux-icon.js"
+    },
+    "./components/lux-scope.js": {
+      "types": "./dist/components/lux-scope.d.ts",
+      "import": "./dist/components/lux-scope.js"
+    },
+    "./components/lux-tab.js": {
+      "types": "./dist/components/lux-tab.d.ts",
+      "import": "./dist/components/lux-tab.js"
+    },
+    "./components/lux-table.js": {
+      "types": "./dist/components/lux-table.d.ts",
+      "import": "./dist/components/lux-table.js"
+    },
+    "./components/lux-tabs.js": {
+      "types": "./dist/components/lux-tabs.d.ts",
+      "import": "./dist/components/lux-tabs.js"
+    },
+    "./components/lux-text.js": {
+      "types": "./dist/components/lux-text.d.ts",
+      "import": "./dist/components/lux-text.js"
+    },
+    "./dist/lux/lux.css": {
+      "default": "./dist/lux/lux.css"
     }
   },
   "scripts": {
-    "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "build": "stencil build --docs && npm run build:angular-module",
+    "build:angular-module": "node scripts/generate-angular-module.js",
+    "dev": "stencil build --dev --watch --serve",
     "test": "stencil test --spec",
     "test:e2e:stencil": "stencil test --e2e",
     "test:watch": "stencil test --spec --e2e --watch",
@@ -44,8 +88,8 @@
     "test:screenshot": "playwright test e2e/screenshot.spec.ts",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
-    "storybook": "storybook dev -p 6006",
-    "build:storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 --disable-telemetry",
+    "build:storybook": "storybook build --disable-telemetry"
   },
   "dependencies": {
     "@stencil/core": "^4.5.0",
