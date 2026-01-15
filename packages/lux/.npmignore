@@ -1,9 +1,0 @@
-src/
-.storybook/
-e2e/
-*.spec.ts
-*.e2e.ts
-*.stories.ts
-tsconfig.json
-.eslintrc.json
-playwright.config.ts
