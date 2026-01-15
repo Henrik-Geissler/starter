@@ -11,7 +11,7 @@
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
     "format": "prettier --write .",
-    "dev": "concurrently --names \"lux,react,angular,jquery\" --prefix-colors \"blue,green,yellow,magenta\" \"npm run dev --workspace=packages/lux\" \"npm run dev --workspace=examples/react-app\" \"npm run dev --workspace=examples/angular-app\" \"npm run dev --workspace=examples/jquery-app\"",
+    "dev": "concurrently --names \"lux,react,angular,jquery\" --prefix-colors \"yellow,green,magenta,blue\" \"npm run dev --workspace=packages/lux\" \"npm run dev --workspace=examples/react-app\" \"npm run dev --workspace=examples/angular-app\" \"npm run dev --workspace=examples/jquery-app\"",
     "storybook": "npm run storybook --workspace=packages/lux",
     "build:storybook": "npm run build:storybook --workspace=packages/lux"
   },
