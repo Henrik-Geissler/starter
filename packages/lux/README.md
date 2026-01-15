@@ -37,7 +37,11 @@ npm install @lux/components
 ### React
 
 ```tsx
-import { LuxButton, LuxCard, LuxScope } from '@lux/react';
+import { defineCustomElements } from '@lux/components/loader';
+import { LuxButton, LuxCard, LuxScope } from '@lux/components/react';
+
+// Register custom elements
+defineCustomElements();
 
 function App() {
   return (
@@ -52,10 +56,12 @@ function App() {
 ### Angular
 
 ```typescript
-import { LuxModule } from '@lux/angular';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { LuxModule } from '@lux/components/angular';
 
 @NgModule({
   imports: [LuxModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   // ...
 })
 ```

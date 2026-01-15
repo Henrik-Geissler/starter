@@ -1,5 +1,7 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
+import { reactOutputTarget } from '@stencil/react-output-target';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 
 export const config: Config = {
   namespace: 'lux',
@@ -12,7 +14,20 @@ export const config: Config = {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'auto-define-custom-elements',
       generateTypeDeclarations: true,
+      externalRuntime: false,
     },
+    reactOutputTarget({
+      componentCorePackage: '@lux/components',
+      proxiesFile: './dist/react/components.ts',
+      outDir: './dist/react',
+      includeDefineCustomElements: true,
+    }),
+    angularOutputTarget({
+      componentCorePackage: '@lux/components',
+      directivesProxyFile: './dist/angular/src/components.ts',
+      directivesArrayFile: './dist/angular/index.ts',
+      outDir: './dist/angular',
+    }),
     {
       type: 'docs-readme',
       strict: true,

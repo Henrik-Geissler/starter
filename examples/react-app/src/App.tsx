@@ -1,5 +1,5 @@
 import React from 'react';
-import { LuxScope, LuxHeading, LuxCard, LuxText, LuxButton, LuxTabs, LuxTab } from '@lux/react';
+import { LuxScope, LuxHeading, LuxCard, LuxText, LuxButton, LuxTabs, LuxTab } from '@lux/components/react';
 
 function App() {
   return (
