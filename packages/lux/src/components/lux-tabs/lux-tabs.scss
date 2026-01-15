@@ -1,0 +1,62 @@
+/**
+ * @fileoverview Styles for lux-tabs component
+ * @experimental
+ */
+
+:host {
+  display: block;
+}
+
+.lux-tabs {
+  font-family: var(--lux-font-family-sans);
+}
+
+.lux-tabs__list {
+  display: flex;
+  border-bottom: 2px solid var(--lux-color-neutral-200);
+  gap: var(--lux-spacing-2);
+}
+
+.lux-tabs__tab {
+  padding: var(--lux-tab-padding, var(--lux-spacing-4));
+  font-size: var(--lux-tab-font-size, var(--lux-font-size-base));
+  font-weight: var(--lux-font-weight-medium, 500);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: var(--lux-color-neutral-600);
+  transition: all var(--lux-transition-base);
+  min-height: var(--lux-touch-target-min);
+  touch-action: manipulation;
+  
+  &:hover {
+    color: var(--lux-color-neutral-900);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--lux-main-color, var(--lux-color-primary-500));
+    outline-offset: 2px;
+  }
+  
+  &--active {
+    color: var(--lux-main-color, var(--lux-color-primary-500));
+    border-bottom-color: var(--lux-main-color, var(--lux-color-primary-500));
+  }
+}
+
+.lux-tabs__panels {
+  padding-top: var(--lux-spacing-4);
+}
+
+.lux-tabs__panel {
+  display: block;
+  
+  &--active {
+    display: block;
+  }
+  
+  &[hidden] {
+    display: none;
+  }
+}

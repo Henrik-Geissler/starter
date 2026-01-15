@@ -1,0 +1,40 @@
+/**
+ * @fileoverview Styles for lux-heading component
+ * @experimental
+ */
+
+:host {
+  display: block;
+}
+
+.lux-heading {
+  font-family: var(--lux-font-family-sans);
+  font-weight: var(--lux-font-weight-bold, 700);
+  line-height: var(--lux-line-height-tight, 1.25);
+  color: var(--lux-color-neutral-900);
+  margin: 0;
+}
+
+.lux-heading--level-1 {
+  font-size: var(--lux-font-size-5xl, 3rem);
+}
+
+.lux-heading--level-2 {
+  font-size: var(--lux-font-size-4xl, 2.25rem);
+}
+
+.lux-heading--level-3 {
+  font-size: var(--lux-font-size-3xl, 1.875rem);
+}
+
+.lux-heading--level-4 {
+  font-size: var(--lux-font-size-2xl, 1.5rem);
+}
+
+.lux-heading--level-5 {
+  font-size: var(--lux-font-size-xl, 1.25rem);
+}
+
+.lux-heading--level-6 {
+  font-size: var(--lux-font-size-lg, 1.125rem);
+}

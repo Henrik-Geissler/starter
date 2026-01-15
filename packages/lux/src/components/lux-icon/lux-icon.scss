@@ -1,0 +1,45 @@
+/**
+ * @fileoverview Styles for lux-icon component
+ * @experimental
+ */
+
+:host {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lux-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.lux-icon--xs {
+  font-size: 0.75rem;
+}
+
+.lux-icon--sm {
+  font-size: 0.875rem;
+}
+
+.lux-icon--base {
+  font-size: 1rem;
+}
+
+.lux-icon--lg {
+  font-size: 1.25rem;
+}
+
+.lux-icon--xl {
+  font-size: 1.5rem;
+}
+
+.lux-icon--2xl {
+  font-size: 2rem;
+}

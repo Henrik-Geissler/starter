@@ -1,0 +1,50 @@
+/**
+ * @fileoverview Styles for lux-card component
+ * @experimental
+ */
+
+:host {
+  display: block;
+}
+
+.lux-card {
+  background-color: white;
+  border-radius: var(--lux-border-radius-lg);
+  padding: var(--lux-card-padding, var(--lux-spacing-6));
+  font-family: var(--lux-font-family-sans);
+}
+
+.lux-card--default {
+  background-color: white;
+  box-shadow: var(--lux-shadow-base);
+}
+
+.lux-card--outlined {
+  background-color: white;
+  border: 1px solid var(--lux-color-neutral-200);
+}
+
+.lux-card--elevated {
+  background-color: white;
+  box-shadow: var(--lux-shadow-md);
+}
+
+.lux-card__header {
+  margin-bottom: var(--lux-spacing-4);
+  
+  &:empty {
+    display: none;
+  }
+}
+
+.lux-card__content {
+  /* Content area */
+}
+
+.lux-card__footer {
+  margin-top: var(--lux-spacing-4);
+  
+  &:empty {
+    display: none;
+  }
+}
