@@ -1,0 +1,4 @@
+# Angular build outputs
+dist/
+.angular/
+out-tsc/

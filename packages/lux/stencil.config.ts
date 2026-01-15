@@ -84,7 +84,7 @@ export const config: Config = {
   testing: {
     browserHeadless: 'new',
     collectCoverage: true,
-    testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
+    testPathIgnorePatterns: ['/node_modules/'],
     coverageThreshold: {
       global: {
         branches: 80,

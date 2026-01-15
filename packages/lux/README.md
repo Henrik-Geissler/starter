@@ -10,8 +10,6 @@ A Stencil-based component library with design tokens, config scoping, and compre
 - **Config Scoping**: Use `<lux-scope>` to apply density and color settings to all child components
 - **Framework Agnostic**: Works with React, Angular, Vue, or vanilla JavaScript
 - **TypeScript**: Strict TypeScript with comprehensive JSDoc
-- **Accessibility**: WCAG AA compliant with automated testing
-- **Cross-Browser**: Tested across modern browsers
 - **Tree-Shakable**: Modular exports for optimal bundle size
 
 ## Installation
@@ -107,6 +105,3 @@ npm run storybook
 ## Testing
 
 - Unit tests: `npm test`
-- E2E tests: `npm run test:e2e`
-- Accessibility: `npm run test:a11y`
-- Screenshots: `npm run test:screenshot`

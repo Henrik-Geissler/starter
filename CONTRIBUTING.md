@@ -45,9 +45,6 @@ npm run storybook
 ### Testing
 
 - Unit tests: `npm test`
-- E2E tests: `npm run test:e2e`
-- Accessibility: `npm run test:a11y`
-- Screenshots: `npm run test:screenshot` (review changes before committing)
 
 ## Code Style
 

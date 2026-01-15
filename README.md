@@ -13,7 +13,7 @@ A Stencil-based component library with React and Angular wrappers, featuring des
 - ✅ **Design Tokens**: Figma-style design tokens as code
 - ✅ **Config Scoping**: `<lux-scope>` for density and color without prop drilling
 - ✅ **Storybook**: Auto-generated from custom-elements.json
-- ✅ **Testing**: Cross-browser, accessibility (WCAG AA), screenshot tests
+- ✅ **Testing**: Unit tests with coverage
 - ✅ **TypeScript**: Strict TypeScript with comprehensive JSDoc
 - ✅ **SCSS**: Modular SCSS styling
 - ✅ **Font Awesome**: Tree-shakable icon support
@@ -74,15 +74,6 @@ npm run storybook
 ```bash
 # Unit tests
 npm test
-
-# E2E tests
-npm run test:e2e
-
-# Accessibility tests
-npm run test:a11y
-
-# Screenshot tests
-npm run test:screenshot
 ```
 
 ## Documentation

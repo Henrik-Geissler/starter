@@ -1,32 +1,10 @@
 # Dependencies
 node_modules/
 
-# Build outputs
-dist/
-build/
-*.tsbuildinfo
-
-# Generated files
-packages/*/dist/
-packages/*/loader/
-packages/*/www/
-packages/*/storybook-static/
-examples/*/dist/
-examples/*/build/
-examples/*/out-tsc/
-
 # Lock files
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-
-# Coverage
-coverage/
-
-# Test results
-test-results/
-screenshots/
-playwright-report/
 
 # Logs
 *.log

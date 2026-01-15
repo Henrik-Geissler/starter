@@ -1,0 +1,15 @@
+# Build outputs
+dist/
+build/
+www/
+loader/
+
+# Storybook
+storybook-static/
+.storybook-static/
+
+# Stencil
+.stencil/
+
+# Coverage
+coverage/
