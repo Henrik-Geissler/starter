@@ -18,7 +18,9 @@
             "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [],
-            "styles": [],
+            "styles": [
+              "../../packages/lux/dist/lux/lux.css"
+            ],
             "scripts": []
           },
           "configurations": {

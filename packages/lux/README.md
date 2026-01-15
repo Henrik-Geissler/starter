@@ -111,6 +111,3 @@ npm run storybook
 - Accessibility: `npm run test:a11y`
 - Screenshots: `npm run test:screenshot`
 
-## License
-
-MIT

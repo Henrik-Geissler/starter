@@ -89,6 +89,3 @@ npm run test:screenshot
 
 See [packages/lux/README.md](./packages/lux/README.md) for detailed documentation.
 
-## License
-
-MIT
