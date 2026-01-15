@@ -1,0 +1,63 @@
+{
+  "name": "@lux/components",
+  "version": "0.0.1",
+  "description": "Lux component library - Experimental Stencil components",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "collection": "./dist/collection/collection-manifest.json",
+  "collection:main": "./dist/collection/index.js",
+  "unpkg": "./dist/lux/lux.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec",
+    "test:e2e:stencil": "stencil test --e2e",
+    "test:watch": "stencil test --spec --e2e --watch",
+    "test:coverage": "stencil test --spec --e2e --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:a11y": "playwright test e2e/accessibility.spec.ts",
+    "test:screenshot": "playwright test e2e/screenshot.spec.ts",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
+  },
+  "dependencies": {
+    "@stencil/core": "^4.5.0",
+    "@stencil/sass": "^3.0.0"
+  },
+  "peerDependencies": {
+    "ag-grid-community": "^31.0.0",
+    "ag-grid-angular": "^31.0.0",
+    "ag-grid-react": "^31.0.0",
+    "@fortawesome/fontawesome-free": "^6.5.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.0",
+    "@storybook/addon-essentials": "^7.6.0",
+    "@storybook/addon-interactions": "^7.6.0",
+    "@storybook/addon-links": "^7.6.0",
+    "@storybook/blocks": "^7.6.0",
+    "@storybook/html-webpack5": "^7.6.0",
+    "@storybook/web-components": "^7.6.0",
+    "@types/jest": "^29.5.11",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@axe-core/playwright": "^4.8.2",
+    "@playwright/test": "^1.40.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-wc": "^1.4.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "puppeteer": "^20.0.0",
+    "storybook": "^7.6.0",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@lux/angular",
+  "version": "0.0.1",
+  "description": "Angular wrappers for Lux components",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "ngc && npm run generate",
+    "generate": "node scripts/generate-wrappers.js",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@lux/components": "^0.0.1",
+    "@angular/core": "^17.0.0",
+    "@angular/common": "^17.0.0"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}
